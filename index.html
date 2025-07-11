@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./assets/css/styles.css">
+   <title>Papitas</title>
+</head>
+
+<body>
+
+
+   <!-- HEADER -->
+   <header class="header" id="header">
+
+      <!-- Nav -->
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Spumora</a>
+
+         <!-- Nav menu -->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+
+               <li>
+                  <a href="#favorites" class="nav__link">Collection</a>
+               </li>
+
+               <li>
+                  <a href="#brands" class="nav__link">Why?</a>
+               </li>
+
+               <li>
+                  <a href="#products" class="nav__link">Buy</a>
+               </li>
+
+               <li>
+                  <a href="#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+
+            <!-- Social -->
+            <div class="nav__social">
+               <a href="https://www.facebook.com" target="_blank" class="nav__social-link">
+                  <i class="ri-facebook-circle-line"></i>
+               </a>
+
+               <a href="https://www.instagram.com" target="_blank" class="nav__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+
+               <a href="https://www.twitter.com" target="_blank" class="nav__social-link">
+                  <i class="ri-twitter-x-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <!-- Nav toggle -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!-- MAIN -->
+   <main class="main">
+
+
+      <!-- HOME -->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+
+            <!-- Home data -->
+            <div class="home__data">
+               <h1 class="home__title">Welcome to Spumora</h1>
+               <h2 class="home__subtitle">Where Skincare Meets Purity</h2>
+               <p>Discover luxurious cold process soaps crafted with nature’s finest ingredients – free from harsh
+                  chemicals and full of love.
+               </p>
+               <br>
+
+               <!-- Home buttons -->
+               <div class="home__buttons">
+                  <a href="#favorites" class="button">Explore</a>
+               </div>
+
+               <!-- Overlay and form -->
+               <div class="overlay" id="loginOverlay">
+                  <div class="home__login">
+                     <span class="button__close" id="closeButton"><i class="ri-close-large-line"></i></span>
+                     <h2 class="overlay__title">¡Ingresa y come las mejores papitas!</h2>
+
+                     <!-- Form -->
+                     <form id="loginForm">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" placeholder=" Tu nombre de usuario" required>
+
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder=" Tu contraseña" required>
+                        <br>
+
+                        <div class="form__button">
+                           <button class="button" type="submit">Ingresa</button>
+                           <button class="button button__ghost" type="submit">Regístrate</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Home images -->
+            <div class="home__images">
+               <!-- <div class="home__circle"> -->
+               <div class="home__subcircle"></div>
+               <!-- </div> -->
+               <img src="./assets/img/hero-image.png" alt="onion image" class="" style="width: 60rem;">
+
+               <!-- <img src="./assets/img/home/home-chips.png" alt="image" class="home__img">
+
+               <img src="./assets/img/home/onion-2.png" alt="onion image" class="home__onion-2">
+
+               <img src="./assets/img/home/chips-2.png" alt="chips image" class="home__chips-2">
+
+               <img src="./assets/img/home/chips-1.png" alt="chips image" class="home__chips-1">
+
+               <img src="./assets/img/home/tomato-1.png" alt="tomato image" class="home__tomato-1">
+
+               <img src="./assets/img/home/onion-1.png" alt="onion rings image" class="home__onion-1">
+
+               <img src="./assets/img/home/leaf-1.png" alt="oregano leafs image" class="home__leaf"> -->
+            </div>
+         </div>
+      </section>
+
+      <!-- <div class="home__devider"></div> -->
+
+
+      <!-- FAVORITES -->
+      <section class="favorite section" id="favorites">
+         <div class="favorites__container container grid">
+            <div class="favorites__data">
+               <h2 class="section__title">Signature Collection</h2>
+
+               <!-- Favorites description -->
+               <p>
+                  Experience the power of nature with our handcrafted cold process soaps – each made to pamper, heal,
+                  and elevate your skin.
+               </p>
+            </div>
+
+            <!-- Favorites swiper -->
+            <div class="favorites__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="favorites__article swiper-slide">
+                     <img src="./assets/img/1.jpg" alt="lay's chips image" class="favorites__img">
+                  </article>
+
+                  <article class="favorites__article swiper-slide">
+                     <img src="./assets/img/2.jpg" alt="lay's chips image" class="favorites__img">
+                  </article>
+
+                  <article class="favorites__article swiper-slide">
+                     <img src="./assets/img/3.jpg" alt="lay's chips image" class="favorites__img">
+                  </article>
+
+                  <article class="favorites__article swiper-slide">
+                     <img src="./assets/img/4.jpg" alt="lay's chips image" class="favorites__img">
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- BRANDS -->
+      <section class="brands section" id="brands">
+         <div class="brands__data">
+            <h2 class="section__title">Why Cold Process?</h2>
+
+            <!-- Brands description -->
+            <p>
+               Cold process soap retains all the natural goodness – rich oils, nourishing glycerin, and essential
+               nutrients – without a trace of harsh chemicals.
+            </p>
+         </div>
+
+         <!-- Benefits list -->
+         <div class="brands__container container grid">
+            <ul class="brands__list">
+               <li class="brand__care">
+                  <i class="ri-plant-line"></i>
+                  <p>
+                     Premium Oils – Shea Butter, Olive Oil, Avocado Oil, Almond Oil & more
+                  </p>
+               </li>
+
+               <li class="brand__care">
+                  <i class="ri-sun-line"></i>
+                  <p>
+                     Custom Natural Additives – Essential oils, herbs, goat/donkey milk
+
+                  </p>
+               </li>
+
+               <li class="brand__care">
+                  <i class="ri-shield-check-line"></i>
+                  <p>
+                     Retains Natural Glycerin – Locks in skin moisture
+
+                  </p>
+               </li>
+
+               <li class="brand__care">
+                  <i class="ri-earth-line"></i>
+                  <p>
+                     Eco-Friendly – No synthetic detergents or melt-and-pour bases
+
+
+                  </p>
+               </li>
+            </ul>
+
+            <!-- Brand image -->
+            <img src="./assets/img/1.png" alt="Lay's logo" class="brand__img">
+         </div>
+      </section>
+
+
+      <!-- PRODUCTS -->
+      <section class="products section" id="products">
+         <div class="brands__data">
+
+            <h2 class="section__title">Simple Buy</h2>
+            <p>Love what you see? Just send us a message on WhatsApp to place your order – it’s that simple!</p>
+
+         </div>
+         <!-- Products cards -->
+         <div class="products__container container">
+            <div class="products__content grid">
+               <article class="products__card">
+                  <img src="./assets/img/1.png" alt="Sunrise Citrus" class="products__img">
+
+                  <span class="products__subtitle">Refreshing Glow</span>
+                  <h2 class="products__title">Sunrise Citrus</h2>
+                  <div class="products__price_container">
+                     <span class="products__price">$3.990</span>
+
+                     <button class="products__button">
+                        <i class="ri-whatsapp-fill"></i>
+                     </button>
+                  </div>
+               </article>
+
+               <article class="products__card">
+                  <img src="./assets/img/4.png" alt="image" class="products__img">
+
+                  <span class="products__subtitle">Deep Exfoliation & Cleanse</span>
+                  <h2 class="products__title">Cafe Scrub</h2>
+                  <div class="products__price_container">
+                     <span class="products__price">$2.990</span>
+
+                     <button class="products__button">
+                        <i class="ri-whatsapp-fill"></i>
+                     </button>
+                  </div>
+               </article>
+
+               <article class="products__card">
+                  <img src="./assets/img/3.png" alt="image" class="products__img">
+
+                  <span class="products__subtitle">Silky Smooth, Even-Toned Skin
+                  </span>
+                  <h2 class="products__title">Donkey Milk & Saffron</h2>
+                  <div class="products__price_container">
+                     <span class="products__price">$3.490</span>
+                     <button class="products__button">
+                        <i class="ri-whatsapp-fill"></i>
+                     </button>
+                  </div>
+               </article>
+
+               <article class="products__card">
+                  <img src="./assets/img/2.png" alt="image" class="products__img">
+
+                  <span class="products__subtitle">Acne-Prone & Sensitive Skin</span>
+                  <h2 class="products__title">Neem Nourish</h2>
+
+                  <div class="products__price_container">
+
+                     <span class="products__price">$2.990</span>
+
+                     <button class="products__button">
+                        <i class="ri-whatsapp-fill"></i>
+                     </button>
+                  </div>
+
+               </article>
+
+            </div>
+         </div>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+         <div class="contact__container container">
+            <h2 class="address__title">CONTÁCTANOS PARA <br> COMER PAPITAS</h2>
+
+            <!-- Address -->
+            <div class="contact__content grid">
+               <address class="contact__data grid">
+                  <div>
+                     <h3 class="contact__title">Escríbenos</h3>
+                     <div class="contact__social">
+                        <a href="https://api.whatsapp.com/send?phone=56944552084&text=Hola Danipa!" target="_blank">
+                           <i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="mailto:dbernales.miranda@gmail.com" target="_blank">
+                           <i class="ri-mail-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div>
+                     <h3 class="contact__title">Llámanos</h3>
+                     <div class="contact__info">
+                        <div class="contact__social">
+                           <a href="tel:+56944552084" target="_blank">
+                              <i class="ri-customer-service-2-fill"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div>
+                     <h3 class="contact__title">Encuéntranos</h3>
+                     <div class="contact__info">
+                        <div class="contact__social">
+                           <a href="https://www.linkedin.com/in/danielapazbernales" target="_blank">
+                              <i class="ri-linkedin-box-fill"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </address>
+
+               <!-- Contact image -->
+               <img src="./assets/img/contact/chips-contact-man.png" alt="image" class="contact__img">
+            </div>
+         </div>
+      </section>
+   </main>
+
+
+   <!-- FOOTER -->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <a href="#" class="footer__logo">Spumora</a>
+
+         <!-- Footer rights -->
+         <div class="footer__content grid">
+            <a href="#" class="footer__link">Terms Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+
+            <span class="footer__copy">
+               &#169; 2025 Designed by <a href="#" class="footer__link">Spumora</a>
+            </span>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scroll up -->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!-- SWIPER JS -->
+   <script src="./assets/js/swiper-bundle.min.js"></script>
+
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+
+   <!-- Main JS -->
+   <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
