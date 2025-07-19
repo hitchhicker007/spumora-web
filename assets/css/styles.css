@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
 
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4rem;
 
   /* Colors */
   /* --first-color: hsl(154, 96%, 35%); */
@@ -155,10 +155,13 @@ img {
 }
 
 .nav__logo {
-  color: var(--white-color);
+  width: 12rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* color: var(--white-color);
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
-  text-shadow: var(--shadow-text);
+  text-shadow: var(--shadow-text); */
 }
 
 .nav__close,
@@ -299,11 +302,12 @@ img {
 .home__circle {
   width: 320px;
   height: 320px;
-  background-color: var(--first-color-darken);
-  border-radius: 50%;
-  box-shadow: inset var(--shadow-circle);
-  display: grid;
   place-items: center;
+  background-image: url('../img/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5rem;
+  overflow: hidden;
 }
 
 .home__subcircle {
@@ -590,6 +594,7 @@ form#loginForm button[type="submit"]:hover {
 .brand__img {
   width: 300px;
   filter: var(--shadow-img);
+  border-radius: 5rem;
   justify-self: center;
 }
 
@@ -818,10 +823,12 @@ details summary {
 }
 
 .footer__logo {
-  color: var(--white-color);
+  width: 15rem;
+  justify-self: center;
+  /* color: var(--white-color);
   font: var(--h1-font-size) var(--second-font);
   justify-self: center;
-  text-shadow: var(--shadow-text);
+  text-shadow: var(--shadow-text); */
 }
 
 .footer__content {
