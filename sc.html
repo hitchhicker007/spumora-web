@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   <link rel="stylesheet" href="./assets/css/styles.css">
+   <title>Cafe Scrub - Spumora</title>
+</head>
+
+<body>
+   <!-- HEADER -->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <img src="assets/img/logo.jpg" alt="" class="nav__logo">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="index.html#home" class="nav__link">Home</a></li>
+               <li><a href="index.html#favorites" class="nav__link">Collection</a></li>
+               <li><a href="index.html#brands" class="nav__link">Why?</a></li>
+               <li><a href="index.html#products" class="nav__link active-link">Buy</a></li>
+               <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+            <div class="nav__social">
+               <a href="https://www.instagram.com/spumora" target="_blank" class="nav__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+            </div>
+         </div>
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!-- MAIN -->
+   <main class="main">
+      <section class="products section" id="product-details">
+         <div class="container" style="position: relative;">
+            <div class="products__content">
+               <div>
+                  <h2 class="product_detail__title">Sunrise Citrus</h2>
+                  <span class="product_detail__subtitle">Refreshing Glow</span>
+               </div>
+
+               <!-- Product Image Gallery -->
+
+               <div class="slider-container">
+                  <div class="slider">
+                     <img src="assets/img/products/sc/1.jpg" alt="Cafe Scrub 1" />
+                     <img src="assets/img/products/sc/2.jpg" alt="Cafe Scrub 2" />
+                     <img src="assets/img/products/sc/3.jpg" alt="Cafe Scrub 3" />
+                     <img src="assets/img/products/sc/4.jpg" alt="Cafe Scrub 3" />
+                     <img src="assets/img/products/5.jpg" alt="Cafe Scrub 5" />
+                  </div>
+               </div>
+
+
+               <div class="thumbnail-gallery">
+                  <img src="assets/img/products/sc/1.jpg" alt="Thumb 1" class="thumb active" onclick="showSlide(0)">
+                  <img src="assets/img/products/sc/2.jpg" alt="Thumb 2" class="thumb" onclick="showSlide(1)">
+                  <img src="assets/img/products/sc/3.jpg" alt="Thumb 3" class="thumb" onclick="showSlide(2)">
+                  <img src="assets/img/products/sc/4.jpg" alt="Thumb 4" class="thumb" onclick="showSlide(3)">
+                  <img src="assets/img/products/5.jpg" alt="Thumb 5" class="thumb" onclick="showSlide(4)">
+               </div>
+
+
+               <div class="products__description">
+                  <p>
+                     Experience the invigorating power of real coffee grounds and nourishing oils. Cafe Scrub gently
+                     exfoliates, removes dead skin, and leaves your skin feeling smooth, refreshed, and glowing.
+                  </p>
+                  <ul>
+                     <li>• Handmade & Cold Processed</li>
+                     <li>• Made with premium natural oils</li>
+                     <li>• No SLS, Parabens, or Harsh Chemicals</li>
+                     <li>• Suitable for all skin types</li>
+                  </ul>
+                  <div class="product_detail__price_container">
+                     <span class="product_details__price">199₹</span>
+                     <button class="product_detail_buy__button"
+                        onclick="window.open('https://api.whatsapp.com/send?phone=919428405605&text=I want to order Cafe Scrub', '_blank')">
+                        <i class="ri-shopping-cart-2-line"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <img src="assets/img/logo.jpg" alt="" class="footer__logo">
+         <div class="footer__content grid">
+            <a href="#" class="footer__link">Terms Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <span class="footer__copy">
+               &#169; 2025 Designed by <a href="#" class="footer__link">Spumora</a>
+            </span>
+         </div>
+      </div>
+   </footer>
+
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+   <!-- Main JS -->
+   <script src="./assets/js/main.js"></script>
+
+   <script>
+      const slider = document.querySelector('.slider');
+      const images = document.querySelectorAll('.slider img');
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+      const thumbs = document.querySelectorAll('.thumb');
+
+      let index = 0;
+
+      function showSlide(i) {
+         index = (i + images.length) % images.length;
+         slider.style.transform = `translateX(-${index * 100}%)`;
+         updateActiveThumb();
+      }
+
+      function updateActiveThumb() {
+         thumbs.forEach((thumb, i) => {
+            thumb.classList.toggle('active', i === index);
+         });
+      }
+
+      prevBtn.addEventListener('click', () => showSlide(index - 1));
+      nextBtn.addEventListener('click', () => showSlide(index + 1));
+   </script>
+
+
+</body>
+
+</html>
